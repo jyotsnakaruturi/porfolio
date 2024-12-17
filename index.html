@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav class="flex items-center justify-between">
+                <div class="left flex items-center">
+                    <div class="branding">
+                        <img src="" alt="Logo" onerror="this.style.display='none'; this.insertAdjacentHTML('afterend', '<span>Logo</span>');">
+                    </div>
+                    <div>
+                        <a href="#">Home</a>
+                        <a href="#about">About</a>
+                        <a href="#projects">Projects</a>
+                        <a href="#skills">skills</a>
+                        <a href="#skills">Achivements</a>
+                    </div>
+                </div>
+                <div class="right">
+                    <a href="https://www.linkedin.com/in/jyotsna-karuturi-237059257/" target="_blank">
+                        <button  style="
+                          background-color: #3DCFD3; 
+                          color: black; 
+                          border: 2px solid #3DCFD3; 
+                           padding:0.8rem 3rem;
+                            font-size: 1rem;
+                            font-weight:600;
+                            border:2px solid transparent;
+                            outline: none;
+                            cursor: pointer;
+                            text-transform: uppercase;
+                            transition: all .3s;;
+                                                " 
+                        onmouseover="this.style.backgroundColor='#161616'; this.style.color='#3DCFD3'; this.style.borderColor='#3DCFD3';" 
+                        onmouseout="this.style.backgroundColor='#3DCFD3'; this.style.color='black'; this.style.borderColor='#3DCFD3';">
+                          Contact
+                        </button>
+                      </a>
+                 </div>
+            </nav>
+
+            <div class="hero flex items-center justify-between">
+                <div class="left flex-1 flex justify-center">
+                    <img src="./image/WhatsApp Image 2024-12-09 at 22.10.01_2cca0426.jpg" alt="Profile Picture" onerror="this.style.display='none'; this.insertAdjacentHTML('afterend', '<i class=&quot;fas fa-user&quot;></i>');">
+                </div>
+                <div class="right flex-1">
+                    <h6>Karuturi Jyotsna Purnima</h6>
+                    <h1>I'm a 3rd-year <span>Computer Science Student</span></h1>
+                    <p>Driven by a passion for innovation, I aim to craft cutting-edge solutions that solve real-world challenges and inspire meaningful progress.</p>
+                    <div>
+                        <button 
+                        style="
+                        background-color:#161616;
+                        border: 2px solid #3DCFD3;
+                        color: #3DCFD3;
+                        padding: 10px 20px;
+                        font-size: 16px;
+                        cursor: pointer;
+                        transition: background-color 0.3s, color 0.3s;"
+                        onclick="this.style.backgroundColor='#3DCFD3'; this.style.color='white';">
+                        <a href="https://amber-mollie-28.tiiny.site" style="text-decoration: none; color: inherit;">DOWNLOAD CV</a>
+                    </button>
+
+                     </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="about" class="about">
+        <div class="container flex items-center">
+            <div class="flex-1">
+                <img class="about-me-img" src="./image/WhatsApp Image 2024-12-09 at 20.53.44_3641f753.jpg" alt="About Me Image" onerror="this.style.display='none'; this.insertAdjacentHTML('afterend', '<i class=&quot;fas fa-info-circle&quot;></i>');">
+            </div>
+            <div class="flex-1">
+                <h1>About <span>Me</span></h1>
+                <h3>Hello! I am Jyotsna</h3>
+                <p>I am a passionate Computer Science student with expertise in Python, Java, and C, excelling in coding, web development, and problem-solving. My skills in Machine Learning and Data Analysis enable me to handle challenging tasks effectively. I have undertaken impactful projects like an Amazon Review Sentiment Analyzer and a Credit Card Fraud Detection System, applying advanced techniques and tools like TensorFlow and Scikit-learn. With a solid grasp of front-end technologies like HTML, CSS, and JavaScript, I blend innovation with technical expertise to deliver robust solutions.
+
+                    Beyond academics, I actively engage in coding contests to sharpen my skills and stay abreast of industry advancements. My goal is to contribute to impactful projects that address real-world challenges and foster meaningful progress.</p>
+            </div>
+        </div>
+    </section>
+    <section id ="projects" class="services">
+        <div class="container">
+            <h1 class="section-heading"><span>My</span>Projects</h1>
+            <div class="card-wrapper">
+                <div class="card">
+                    <h2>Organic Waste Management</h2>
+                    <p>The Organic Waste Management System enables waste collection, recycling into compost/biogas, and reduces environmental impact with user-friendly scheduling and tracking.</p>
+                 </div>
+                <div class="card">
+                    <h2>Credit Card Fraud Detection</h2>
+                    <p>The Credit Card Fraud Detection System detects fraudulent transactions using machine learning, ensuring security and accuracy with tools like Scikit-learn, Pandas, and Python.</p>
+                 </div>
+                <div class="card">
+                    <h2>Amazon Sentiment Analysis</h2>
+                    <p>The Amazon Sentiment Analysis project uses machine learning to analyze customer reviews, determining sentiment polarity with tools like Python and Scikit-learn.</p>
+                 </div>
+                <div class="card">
+                    <h2>CareerCraft-WebApp</h2>
+                    <p>CareerCraft-WebApp (W 2024) is a web platform providing career guidance with insights on courses, exams, and career paths. It includes an interactive Q&A section, built using HTML, CSS, JavaScript, Bootstrap, PHP, and MySQL.</p>
+                 </div>
+            </div>
+        </div>
+        </section> 
+            <section  id ="skills" class="freelancer">
+                <h1>My Skills and Achievements</h1>
+            </section>
+            <section class="reviews">
+                <div class="container">
+                    <h1 class="section-heading"><span>Technical</span> Skills</h1>
+                    <div class="slider">
+                        <p>I am skilled in Python, Java, C, SQL, and web technologies like HTML, CSS, Bootstrap, and JavaScript. My expertise includes Data Structures, Algorithms, DBMS, OOP, and Operating Systems, along with experience in tools like VS Code, Figma, and Git/GitHub for efficient development and collaboration.</p>
+
+                    </div>
+                    <h1 class="section-heading"><span>My</span>Achivements</h1>
+                    <div class="slider">
+                        <p>-> Ranked 78th globally in a CodeChef contest</p>
+                        <p>-> Solved 350+ problems on LeetCode and earned the 100 Days Challenge Badge.</p>
+                        <p>-> Secured 2nd place in a paper presentation on Augmented and Virtual Reality.</p>
+                     </div>
+                </div>
+            </section>
+             
+         
+        
+</body>
+</html>

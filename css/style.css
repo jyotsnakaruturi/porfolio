@@ -1,0 +1,318 @@
+@import 'untilities.css';
+:root{
+    --primary:#3DCFD3;
+    --dark:#161616;
+    --pure:#FFFFFF;
+    --ternary:#898989;
+    --light:#F2F2F2;
+    --secondary:#070606;
+}
+body{
+    font-family:'Poppines',sans-serif;
+}
+
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing:antialiased;
+}
+
+header{
+    background-color: var(--dark);
+    clip-path: polygon(0 0, 100% 0,100% 100%,70% 88%,0 100%);/*inorder to get that while part in foirst page*/
+}
+.container{
+    max-width:1152px;
+    padding:0 15px;
+    margin:0 auto;
+}
+
+header nav .left a{
+    color: var(--pure);
+    text-decoration: none;
+    margin-right: 2rem;
+    text-transform: uppercase;/*to change text to upper case*/
+    transition: all .3s;
+}
+header nav .left a:hover{
+    color:var(--primary);
+}
+header nav{
+    padding: 2rem 0;
+
+}
+
+header nav .branding{
+    margin-right:3rem;
+}
+
+/*image width*/
+.hero .left img{
+    width: 300px;
+    height:auto;
+
+}
+.hero .right{
+    color: var(--pure);
+}
+.hero .right h6{
+    font-size: 1.6rem;
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+}
+
+.hero .right h1{
+    font-size: 3rem;
+    font-weight: 100;
+    line-height: 1.2;
+    margin-bottom: 2rem;
+}
+.hero .right h1 span{
+    color: var(--primary);
+}
+.hero .right p{
+    line-height: 1.9rem;/*The line-height property in CSS controls the amount of space between
+                            lines of text within an element. It determines the vertical
+                            distance between the baselines of adjacent text lines, 
+                            improving readability and spacing.*/
+    margin-bottom: 2rem;/*to get space from bottom*/
+
+}
+
+.hero{
+    padding: 3rem 0;
+}
+
+/*to adjust data on left in first page*/
+.hero .right{
+    margin-top: -7rem;
+    
+}
+
+
+/* To adjust image to up and dowm to down we use normal number to top we -number */
+.hero .left{
+    margin-top: -4rem;
+    
+}
+section{
+    padding: 7rem 0;
+}
+.about .about-me-img {
+    height: 450px;
+     
+}
+.about h1{
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+.about h1 span{
+    color: var(--primary);
+}
+.about h3{
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    font-weight: 400;
+}
+.about p{
+    font-family: 'Lato',sans-serif;
+    color: var(--ternary);
+    line-height: 1.9;
+}
+.about .social{
+    display:flex;
+}
+.about .social a{
+    background-color:var(--dark);
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin-right: 0.6rem;
+}
+.about .social a img{
+    width: 100%;
+    height: 100%;
+    padding: 0.5rem;
+}
+.section-heading{
+    color:var(--secondary);
+    text-align: center;
+    margin-bottom: 3rem;
+    line-height: 0.5;
+}
+.section-heading + p{
+    color: var(--ternary);
+    font-family: 'Lato',sans-serif;
+    margin-bottom: 6rem;
+    text-align: center;
+
+}
+section.services {
+    background-color: var(--light);
+}
+.section-heading span{
+    color: var(--primary);
+}
+section.services .card-wrapper{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    grid-column-gap:2rem ;
+    grid-row-gap: 2rem;
+}
+section.services .card-wrapper .card{
+    background-color: var(--pure);
+    padding: 100rem 2 rem;
+}
+section.services .card-wrapper .card h2{
+    margin-bottom: 1rem;
+    font-weight: 400;
+    margin-top: 2rem;
+    text-align: center;
+
+}
+section.services .card-wrapper .card p{
+
+    font-family: 'Lato',sans-serif;
+    line-height: 1.9;
+    color: var(--ternary);
+    font-weight: 400;
+    margin-left: 2rem;
+    margin-left: 2rem;
+}
+section.services .card-wrapper .card:hover{
+    background: var(--dark);
+    cursor: pointer;
+    transition: all 0.6;
+
+}
+section.services .card-wrapper .card:hover h2,section.services .card-wrapper .card:hover p{
+    color: var(--pure);
+    cursor: pointer;
+    transition: all 0.6;
+
+
+}
+section.freelancer{
+    text-align: center;
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../image/camera.png);
+    color: var(--pure);
+    clip-path: polygon(0 0, 100% 0,100% 100%,67% 80%,0 100%);
+
+}
+section.freelancer h1 {
+    font-size: 2rem;
+}
+
+section.reviews .container .slider p {
+    font-family: 'Lato', sans-serif;
+    line-height: 1.9;
+    color: var(--ternary);
+    font-weight: 400;
+}
+section.reviews .container h1.section-heading {
+    margin-top: 20px; /* Adjust the value as needed */
+}
+
+
+
+
+
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  /* Centering elements vertically */
+    padding: 3rem 0;
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+}
+
+.hero .left {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem; /* Add spacing at the bottom */
+}
+
+.hero .right {
+    flex: 1;
+    padding-left: 2rem; /* Add padding to avoid touching the image */
+    text-align: left;
+}
+
+.hero .right h1 {
+    font-size: 3rem;
+    font-weight: 100;
+    line-height: 1.2;
+    margin-bottom: 1.5rem; /* Reduce space below the title */
+}
+
+.hero .right p {
+    font-size: 1.1rem;
+    line-height: 1.8rem;
+    margin-bottom: 1.5rem; /* Increase margin for better spacing */
+}
+
+/* Adjust the button */
+.hero .right button {
+    background-color: #161616;
+    border: 2px solid #3DCFD3;
+    color: #3DCFD3;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    margin-top: 1rem; /* Ensure space between text and button */
+}
+
+.hero .right button a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.hero .right button:hover {
+    background-color: #3DCFD3;
+    color: white;
+    border-color: #3DCFD3;
+}
+
+/* For smaller screens, make the hero section more flexible */
+@media screen and (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .hero .left img {
+        width: 80%;
+        max-width: 300px;
+        margin-bottom: 1rem;
+    }
+
+    .hero .right {
+        padding-left: 0;
+        margin-top: 1rem;
+    }
+
+    .hero .right h1 {
+        font-size: 2rem;
+    }
+
+    .hero .right p {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    /* Adjust button on mobile */
+    .hero .right button {
+        width: 100%; /* Full-width button on mobile */
+        padding: 12px;
+        font-size: 1.2rem;
+    }
+}
